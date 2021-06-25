@@ -86,6 +86,11 @@ If you want to rebuild and redeploy *only* the sample app:
 $ ./run.sh reload_sample
 ```
 
+#### Configure Type and aspect which should be excluded from event system
+
+https://docs.alfresco.com/content-services/latest/develop/oop-ext-points/events/
+
+By default, rn:rendition and cm:thumbnail events are excluded
 
 ##TODO
 
