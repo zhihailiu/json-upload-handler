@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.alfresco</groupId>
+		<artifactId>alfresco-java-sdk</artifactId>
+		<version>5.0.1-SNAPSHOT</version>
+	</parent>
+
+	<groupId>com.acme</groupId>
+	<artifactId>json-upload-handler</artifactId>
+	<name>Alfresco Java Event API :: Handler upon creating json file</name>
+	<description>Sample application to demonstrate Java Event API client handlers approach</description>
+	<packaging>jar</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.alfresco</groupId>
+			<artifactId>alfresco-java-event-api-spring-boot-starter</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.alfresco</groupId>
+			<artifactId>alfresco-java-rest-api-spring-boot-starter</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>alfresco-public</id>
+			<url>https://artifacts.alfresco.com/nexus/content/groups/public</url>
+		</repository>
+
+		<repository>
+			<id>alfresco-public-snapshots</id>
+			<url>https://artifacts.alfresco.com/nexus/content/groups/public-snapshots</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
